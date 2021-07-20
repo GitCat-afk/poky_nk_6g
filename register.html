@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Register</title>
+	<style>
+		.button {
+          padding: 15px 25px;
+          font-size: 37px;
+          text-align: center;
+          cursor: pointer;
+          outline: none;
+          color: #fff;
+          background-color: #fa1134;
+          border: none;
+          border-radius: 15px;
+          box-shadow: 0 9px #999;
+         }
+
+          .button:hover {background-color: #d4223f}
+
+          .button:active {
+             background-color:#d4223f;
+             box-shadow: 0 5px #666;
+             transform: translateY(4px);
+         }
+         h2
+         {
+           color:white;
+           font-family: arial;
+           font-size:67px;
+           box-shadow: 0 9px #878787;
+           background-color: #b0b0b0;
+           border-radius: 10px;
+           text-align:center;
+           margin:15px;
+           margin-right:10px;
+           margin-left: 1px;
+         }
+         body
+         {
+         	background-size:cover;
+         	background-repeat:no-repeat;
+         }
+         .hoyo
+         {
+         	background-color: #145c96; 
+           border: none;
+           color: white;
+           padding: 16px 32px;
+           text-align: center;
+           text-decoration: none;
+           display: inline-block;
+           font-size: 16px;
+            margin: 4px 2px;
+           transition-duration: 0.4s;
+           cursor: pointer;
+           border-radius: 35px;
+           font-size:31px;
+           display: block;
+
+         }
+         .hoyo:hover
+          {
+         background-color:#b5ffee;
+         color: #757778;
+          }
+	</style>
+</head>
+<body style="background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNOTBbFmsuGSOTSSgMokOA2nGiOCoyFUGc3M3Fiiazld5GSBJ0H_o8irWiGHcGhymaFGM&usqp=CAU');">
+	<nav>
+		<a href="file:///C:/Users/Gurjot%20Home/OneDrive/Desktop/INFOR.html">
+			<button class="button"> Info </button>
+									
+		</a>
+		<a href="file:///C:/Users/Gurjot%20Home/OneDrive/Desktop/tournament_history.html">
+			<button class="button"> Tournament history </button>
+		</a>
+        <a href="file:///C:/Users/Gurjot%20Home/OneDrive/Desktop/Battle.html">
+			<button class="button">Battle</button>
+									
+		</a>
+	</nav>
+	<h2>Register</h2>
+	<center>
+		<table cellspacing="5px" cellpadding="5px">
+		<tr>
+			<td style="font-size: 48px; font-family: arial; color:white; text-align: center;">
+				Username
+			</td>
+		</tr>
+		<tr>
+			<td>
+			  <input type="text" name="Register" style="font-size: 37px;" id="egister">	
+			</td>
+		</tr>
+		<tr>
+			<td style="font-size: 48px; font-family: arial; color:white; text-align: center;">
+				Password
+			</td>
+		</tr>
+		<tr>
+			<td>
+			  <input type="text" name="Password" style="font-size: 37px;" id="pass">	
+			</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">
+				<input type="button" value="Submit" onclick="cheking()" name="BS" class="hoyo" id="bu">
+			</td>
+		</tr>
+	</table>
+	<p id="para" style="font-family:verdana; color:white; font-size:34px;"></p>
+	</center>
+	<script type="text/javascript">
+		function cheking()
+		{
+			var yo=document.getElementById("egister").value;
+			var ho=document.getElementById("pass").value;
+			if (yo.length>0 && ho.length==8)
+			{
+             // document.getElementById("para").innerHTML="You have successfully singed up for the tournament, to enter the queue, click the Battle button in the navigation";
+              document.getElementById("bu").style.display="none";
+              alert("You have successfully singed up for the tournament, to enter the queue, click the Battle button in the navigation");
+			}
+			else
+			{
+				document.getElementById("para").innerHTML="Please enter a valid password of 8 digits ";
+			}
+		}
+	</script>	
+    
+</body>
+</html>

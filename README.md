@@ -1,1 +1,1 @@
-# poky_nk_6g
+# http://poky_nk_6g
